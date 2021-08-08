@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 2 задание 3</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let a = +prompt("Пожалуйста введите любое числовое значение");
+        let b = +prompt("Пожалуйста введите любое числовое значение");
+        let x = 0;
+        if (a >= 0 && b >= 0) {
+            x = a - b;
+            document.write("Вы ввели оба числа положительные, результат вычитания = " + x);
+        } else if (a < 0 && b < 0) {
+            x = a * b;
+            document.write("Вы ввели оба числа отрицательные, результат произведения = " + x);
+        } else if (a >= 0 && b < 0 || a < 0 && b >= 0) {
+            x = a + b;
+            document.write("Вы ввели одно число положительное , другое отрицательное, результат сложения = " + x);
+        } else {
+            document.write("Вы ввели некорректные данные");
+        }
+    </script>
+</body>
+
+</html>
